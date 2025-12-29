@@ -20,15 +20,15 @@
     <legend>Personal Information</legend>
 
     <!--creating a required input field for name and its label-->
-   <label id="name-label">Name (required):</label>
+   <label for="name" id="name-label">Name (required):</label>
    <input required type="text" name="name" id="name" size="20" placeholder="James Banda">
 
     <!--creating a required input field for email and its label-->
-   <label id="email-label">Email (required):</label>
+   <label for="email" id="email-label">Email (required):</label>
     <input required type="email" name="email" id="email" size="20" placeholder="jamesbanda@gmail.com">
 
     <!--creating an optional input field for age and its label-->
-    <label id="number-label">Age (optional) :</label>
+    <label for="number" id="number-label">Age (optional) :</label>
     <input type="number" name="age" id="number" min="16" max="85" placeholder="25">
      </fieldset>
 
@@ -36,7 +36,7 @@
   <fieldset>
      <!--adding a caption to the second group of elements-->
      <legend>How did you hear about MCOMAT?</legend>
-     <select id="dropdown">
+     <select id="dropdown" name="source">
        <option value="Whatsapp-forum">Whatsapp Forum</option>
        <option selected value="facebook">Facebook</option>
        <option value="radio">Radio</option>
@@ -50,19 +50,19 @@
   <fieldset>
 
  <!--adding a caption to the third group of elements-->
-  <legend>What do you realy like about MCOMAT?</legend>
+  <legend>What do you really like about MCOMAT?</legend>
 
 <!--Creating input fields and labels for radio button-->
-  <input type="radio" name="name" value="reputation">
+  <input type="radio" name="choice" value="reputation" id="reputation">
   <label for="reputation">Reputation</label>
   
-  <input type="radio" name="name" value="location">
+  <input type="radio" name="choice" value="location" id="location">
   <label for="location">Location</label>
 
-  <input type="radio" name="name" value="caring-lecturers">
-  <label for="caring-lectures">Caring Lecturers</label>
+  <input type="radio" name="choice" value="caring-lecturers" id="caring-lecturers">
+  <label for="caring-lecturers">Caring Lecturers</label>
 
-  <input checked type="radio" name="name"  value="cheap-education">
+  <input checked type="radio" name="choice"  value="cheap-education" id="cheap-education">
   <label for="cheap-education">Cheap Education</label>
   </fieldset>
 
@@ -73,35 +73,35 @@
    <legend>Which diploma courses do you know that MCOMAT offers?</legend>
 
  <!--Creating  input fields and labels for checkboxes-->
- <input type="checkbox" value="ict" name="ict">
+ <input type="checkbox" value="ict" name="ict" id="ict">
  <label for="ict">Information Communication and Technology</label>
- <input type="checkbox" value="ph" name="ph">
+ <input type="checkbox" value="ph" name="ph" id="ph">
  <label for="ph">Public Health</label>
 
- <input type="checkbox" value="fsn" name="fsn">
- <label for="fsn">Food Security and Nutriotion</label>
+ <input type="checkbox" value="fsn" name="fsn" id="fsn">
+ <label for="fsn">Food Security and Nutrition</label>
 
- <input type="checkbox" value="envs" name="envs">
+ <input type="checkbox" value="envs" name="envs" id="envs">
  <label for="envs">Environmental Science</label>
 
- <input type="checkbox" value="hmt" name="hmt">
+ <input type="checkbox" value="hmt" name="hmt" id="hmt">
  <label for="hmt">Hospitality Management and Tourism</label>
 
- <input type="checkbox" value="hrm" name="hrm">
+ <input type="checkbox" value="hrm" name="hrm" id="hrm">
  <label for="hrm">Human Resource Management</label>
 
- <input type="checkbox" value="hiv_aids" name="hiv_aids">
- <label for="hiv_aids">HIV and AIDS<label>
+ <input type="checkbox" value="hiv_aids" name="hiv_aids" id="hiv_aids">
+ <label for="hiv_aids">HIV and AIDS</label>
 
-<input type="checkbox" value="ecd" name="ecd">
- <label for="ecd">Early Childhood and Development<label>
+<input type="checkbox" value="ecd" id="ecd" name="ecd">
+ <label for="ecd">Early Childhood and Development</label>
  </fieldset>
 
 
 <fieldset>
   <legend>What should MCOMAT improve on?</legend>
-<label for="submit">Any Suggestions?</label>
- <textarea cols="60" rows="5" id="suggestion" name="suggestion" value="suggestion"></textarea>
+<label for="suggestion">Any Suggestions?</label>
+ <textarea cols="60" rows="5" id="suggestion" name="suggestion"></textarea>
 
  <button type="submit" id="submit">Submit</button>
 </fieldset>
@@ -109,4 +109,3 @@
  </form>
   </body>
 </html>
-
